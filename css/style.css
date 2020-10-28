@@ -11,6 +11,9 @@ body {
 
 /* header top */
 .header_top {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 60px;
   line-height: 60px;
   width: 100%;
@@ -65,3 +68,45 @@ body {
   cursor: pointer;
 }
 /* /header top */
+
+/* header bottom */
+.header_bottom {
+  margin-top: 60px;
+  padding: 40px;
+  background-image: url(../img/jumbo-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .header_bottom [class*="col-"] {
+  background-color: orange;
+  border: 1px solid black;
+} */
+.title {
+  color: white;
+  height: 500px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.title p {
+  font-size: 24px;
+  font-family: 'Sailec-Light';
+  text-shadow: 2px 2px 8px black;
+}
+
+.login {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.login h2 {
+    font-weight: bold;
+}
+/* /header bottom */
