@@ -1,19 +1,16 @@
-
 body {
   font-size: 16px;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-/* debug */
-/* [class*="col-"] {
-  background: orange;
+/* utilities */
+[class*="col-"] {
   height: 100%;
-  border: 1px solid black;
-} */
+}
+/* /utilities */
 
 /* header top */
 .header_top {
-  background: pink;
   height: 60px;
   line-height: 60px;
   width: 100%;
@@ -50,18 +47,21 @@ body {
   transition: .3s;
 }
 
-#burger_menu {
-  border: 1px solid white;
-  border-radius: 3px;
+.burger_menu {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 7px 5px;
 }
-
-#burger_menu div {
-  width: 25px;
-  height: 1px;
-  background-color: black;
-  margin: 3px 0;
+.burger_menu div {
+  width: 20px;
+  height: 3px;
+  background-color: #006AFF;
+  border-radius: 5px;
+  margin: 4px 0;
 }
-#burger:hover {
+.burger:hover {
   cursor: pointer;
 }
+/* /header top */
