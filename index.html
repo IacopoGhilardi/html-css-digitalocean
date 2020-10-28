@@ -20,22 +20,27 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-9 col-lg-3">
-            <img src="img/do_logo.png" alt="digital logo">
+            <img src="img/do_logo.png" alt="digital logo" id="logo">
           </div>
           <div class="visible-lg col-lg-5">
             <ul class="list-inline text-center">
-              <li><a href="#">products</a></li>
+              <li><a href="#">products <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">customers</a></li>
-              <li><a href="#">community</a></li>
+              <li><a href="#">community <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">pricing</a></li>
             </ul>
           </div>
           <div class="col-xs-3 col-lg-4">
-            <ul class="list-inline text-right">
+            <div class="burger_menu hidden-lg">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="list-inline text-right visible-lg">
               <li><a href="#">docs</a></li>
-              <li><a href="#">support</a></li>
+              <li><a href="#">support <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">login</a></li>
-              <li><a href="#" class="btn btn-default navbar-btn">sign up</a></li>
+              <li><a href="#" class="btn btn-default navbar-btn" id="sign_up">sign up</a></li>
             </ul>
           </div>
         </div>

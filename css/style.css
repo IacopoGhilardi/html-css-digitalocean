@@ -5,10 +5,17 @@ body {
 }
 
 /* debug */
+/* [class*="col-"] {
+  background: orange;
+  height: 100%;
+  border: 1px solid black;
+} */
+
+/* header top */
 .header_top {
   background: pink;
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   width: 100%;
 }
 
@@ -17,8 +24,44 @@ body {
   height: 100%;
 }
 
-[class*="col-"] {
-  background: orange;
-  height: 100%;
-  border: 1px solid black;
+.list-inline li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+.list-inline li a:hover {
+  color: #006AFF;
+}
+
+#logo {
+  max-width: 150px;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+#sign_up {
+  border: 1px solid #006AFF;
+  color: #006AFF;
+  background: white;
+}
+#sign_up:hover {
+  background: #006AFF;
+  color: white;
+  transition: .3s;
+}
+
+#burger_menu {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 7px 5px;
+}
+
+#burger_menu div {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+  margin: 3px 0;
+}
+#burger:hover {
+  cursor: pointer;
 }
