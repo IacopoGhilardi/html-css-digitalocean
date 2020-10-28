@@ -72,20 +72,15 @@ body {
 /* header bottom */
 .header_bottom {
   margin-top: 60px;
-  padding: 40px;
+  padding: 60px;
   background-image: url(../img/jumbo-background.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* .header_bottom [class*="col-"] {
-  background-color: orange;
-  border: 1px solid black;
-} */
+/* header title */
 .title {
   color: white;
-  height: 500px;
 }
 
 h1 {
@@ -99,14 +94,96 @@ h1 {
   font-family: 'Sailec-Light';
   text-shadow: 2px 2px 8px black;
 }
+/* header title */
 
+/* header login */
 .login {
+  width: 80%;
+  margin: 0 auto;
   background: white;
-  padding: 20px;
+  padding: 20px 20px;
   border-radius: 5px;
 }
 
-.login h2 {
-    font-weight: bold;
+.login h2,
+.login a,
+.login p {
+    font-weight: 700;
 }
+
+.login span {
+  color: #006AFF;
+}
+
+.input_field input {
+  outline: none;
+  border: none;
+}
+
+.login a:not(:last-child) {
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.44);
+}
+
+.login a:last-child {
+  text-decoration: underline;
+}
+
+.btn_account {
+  background-color: #579AFF;
+}
+.btn_account:hover {
+  background-color: #006AFF;
+}
+
+.login p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.google_btn {
+  position: relative;
+}
+.google_btn img {
+  max-height: 100%;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+/* /header login */
 /* /header bottom */
+
+
+/* media query */
+/* xs and sm */
+@media screen and (max-width: 767px) {
+  
+  /* header */
+  .header_bottom {
+    padding: 50px 0px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .login {
+    width: 90%;
+  }
+  /* /header */
+}
+/* /xs and sm */
+
+/* md */
+@media screen and (max-width: 1199px) {
+
+  /* header */
+  h1 {
+    font-size: 4rem;
+  }
+  /* header */
+
+}
+/* /md */
