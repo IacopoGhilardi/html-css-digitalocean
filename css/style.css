@@ -159,7 +159,7 @@ h1 {
 /* media query */
 /* xs and sm */
 @media screen and (max-width: 767px) {
-  
+
   /* header */
   .header_bottom {
     padding: 50px 0px;
@@ -180,6 +180,10 @@ h1 {
 @media screen and (max-width: 1199px) {
 
   /* header */
+  .header_bottom {
+    padding: 60px 20px; 
+  }
+
   h1 {
     font-size: 4rem;
   }
