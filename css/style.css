@@ -193,11 +193,11 @@ h4 {
   vertical-align: middle;
 }
 
-.sponsor a {
+.blue_link {
   color: #0069ff;
   text-decoration: none;
 }
-.sponsor a:hover {
+.blue_link a:hover {
   color: rgb(39, 40, 193);
 }
 /* sponsor */
@@ -303,6 +303,63 @@ h4 {
   border-radius: 50%;
   cursor: pointer;
 }
+/* /dev */
+
+/* features */
+.features {
+  padding: 50px 0;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+}
+
+.features_col img {
+  width: 50px;
+}
+
+.features_col h4 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.features_col a {
+  display: block;
+  margin-top: 10px;
+}
+/* features */
+
+/* speed test */
+.speed_test {
+  background: rgb(0,71,197);
+  background: linear-gradient(180deg, rgba(0,71,197,1) 21%, rgba(0,30,154,1) 89%);
+  color: white;
+  padding: 50px 0;
+}
+
+.speed_row {
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+.speed_row:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.speed_row div:last-child {
+  text-align: right;
+}
+
+.speed_row div:nth-child(2) {
+  color: #BBC8EA;
+}
+
+.speed_row a {
+  color: rgb(0, 215, 210);
+}
+/* /speed test */
 
 /* media query */
 /* xs */
@@ -330,6 +387,10 @@ h4 {
     margin-bottom: 40px;
   }
 
+  .deploy_item p {
+    font-size: 16px;
+  }
+
   .deploy_menu,
   .deploy_item {
     padding: 0px 10px 0px 0px;
@@ -349,6 +410,19 @@ h4 {
   .round_menu {
     margin-top: 100px;
   }
+  /* /dev */
+
+  /* features */
+  .features_col a {
+    margin-bottom: 20px;
+  }
+  /* /features */
+
+  /* speed test */
+  .row [class*="col-"]:first-child .speed_row:last-child {
+    margin-bottom: 25px;
+  }
+  /* /speed test */
 
 }
 /* /xs*/
@@ -367,10 +441,13 @@ h4 {
   /* header */
 
   /* main */
+  /* deploy */
   .deploy_item {
     padding: 20px 30px 0px 0px;
   }
+    /* /deploy */
 
+  /* dev */
   .dev_presentation img {
     width: 350px;
   }
@@ -378,6 +455,13 @@ h4 {
   .round_menu {
     margin-top: 100px;
   }
+  /* /dev */
+
+  /* speed test */
+  .row [class*="col-"]:first-child .speed_row:last-child {
+    margin-bottom: 25px;
+  }
+  /* /speed test */
 
 }
 /* /md */
