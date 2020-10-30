@@ -290,7 +290,6 @@ h4 {
 
 .dev_presentation img {
   width: 700px;
-  vertical-align: middle;
 }
 
 .round_menu {
@@ -333,6 +332,10 @@ h4 {
 .features_col a {
   display: block;
   margin-top: 10px;
+}
+
+.features_col p {
+  font-size: 1.5rem;
 }
 /* features */
 
@@ -436,7 +439,7 @@ footer ul {
 
 footer li {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 #footer_logo {
@@ -446,7 +449,6 @@ footer li {
 #made {
   color: #8e94a3;
 }
-
 
 .social_list li {
   display: inline-block;
@@ -463,6 +465,58 @@ footer li {
   padding: 5px 0;
 }
 /********** /footer**********/
+
+/********** chatbot**********/
+.chatbot {
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+  height: 60px;
+}
+
+.chatbot_img {
+  position: relative;
+  height: 100%;
+  float: right;
+  margin-left: 10px;
+}
+
+.chatbot_img span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid white;
+}
+
+.chatbot_img img,
+.chat_box {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.chatbot_img img {
+  max-width: 100%;
+  background: lightblue;
+}
+
+.chat_box {
+  width: 300px;
+  float: left;
+  background: white;
+  padding: 7px;
+  color: black;
+  box-shadow: 2px 2px 2px black;
+  }
+/********** /chatbot**********/
+
 
 /* media query */
 /* xs */
@@ -548,6 +602,26 @@ footer li {
   }
   /********** /footer**********/
 
+  /********** chatbot**********/
+  .chatbot {
+    left: 50px;
+    bottom: 70px;
+    height: 120px;
+  }
+
+  .chatbot_img,
+  .chat_box {
+    float: none;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  .chatbot_img {
+    margin-left: 0;
+    width: 60px;
+  }
+  /********** /chatbot**********/
+
 }
 /* /xs*/
 
@@ -611,6 +685,26 @@ footer li {
     margin-bottom: 20px;
   }
   /********** /footer**********/
+
+  /********** chatbot**********/
+  .chatbot {
+    left: 50px;
+    bottom: 70px;
+    height: 120px;
+  }
+
+  .chatbot_img,
+  .chat_box {
+    float: none;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  .chatbot_img {
+    margin-left: 0;
+    width: 60px;
+  }
+  /********** /chatbot**********/
 
 }
 /* /md */
