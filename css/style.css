@@ -197,19 +197,13 @@ h4 {
   font-size: 1.5rem;
 }
 
-.list_inline {
+.list_sponsor {
   height: 100px;
-  line-height: 100px;
 }
 
-.list_inline li {
-  list-style: none;
-}
-
-.list_inline li img {
+.list_sponsor div img {
   max-width: 100%;
   height: 100%;
-  vertical-align: middle;
 }
 /* sponsor */
 
@@ -252,6 +246,7 @@ h4 {
 .deploy_item,
 .four-logos {
   max-width: 100%;
+  height: 100%;
 }
 
 .deploy_item {
@@ -264,7 +259,7 @@ h4 {
 }
 
 .deploy_item p {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
 }
 /* /deploy */
 
@@ -339,7 +334,6 @@ h4 {
 
 /* speed test */
 .speed_test {
-  background: rgb(0,71,197);
   background: linear-gradient(180deg, rgba(0,71,197,1) 21%, rgba(0,30,154,1) 89%);
   color: white;
   padding: 50px 0;
@@ -402,6 +396,77 @@ h4 {
   font-weight: 700;
 }
 /* rockerbox */
+
+/* create account */
+.create_account {
+  background: linear-gradient(180deg, rgba(0,71,197,1) 21%, rgba(0,30,154,1) 89%);
+  padding: 50px 0;
+  color: white;
+}
+
+.create_account h2 {
+  margin-bottom: 40px;
+}
+
+.create_account a {
+  color: rgb(0, 105, 255);
+  background: white;
+}
+.create_account a:hover {
+  background: rgb(0, 105, 255);
+  transition: .3s;
+}
+/* /create account */
+/* /main */
+
+/* footer */
+footer {
+  padding: 50px 0;
+}
+footer,
+footer a {
+  color: #A6ADBD;
+  background: #031C4E;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer h4 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+#made {
+  color: #8e94a3;
+}
+
+.social_list li {
+  display: inline-block;
+}
+.social_list li:not(:first-child) {
+  padding-left: 10px;
+}
+
+.social_list li i {
+  font-size: 2.7rem;
+}
+
+.footer_col li {
+  padding: 5px 0;
+}
+/* /footer */
 
 /* media query */
 /* xs */
@@ -479,6 +544,12 @@ h4 {
   }
   /* rockerbox */
 
+  /* footer */
+  .footer_col,
+  .social_list {
+    margin-bottom: 20px;
+  }
+  /* /footer */
 
 }
 /* /xs*/
@@ -505,7 +576,7 @@ h4 {
 
   /* dev */
   .dev_presentation img {
-    width: 350px;
+    width: 450px;
   }
 
   .round_menu {
@@ -535,6 +606,15 @@ h4 {
     margin-top: 40px;
   }
   /* /rockerbox */
+
+  /* footer */
+  .footer_col,
+  .social_list {
+    margin-bottom: 20px;
+  }
+  /* /footer */
+
+  /* footer */
 
 }
 /* /md */
