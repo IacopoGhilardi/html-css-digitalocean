@@ -436,11 +436,17 @@ footer ul {
 
 footer li {
   list-style: none;
+  margin-top: 10px;
+}
+
+#footer_logo {
+  margin-bottom: 10px;
 }
 
 #made {
   color: #8e94a3;
 }
+
 
 .social_list li {
   display: inline-block;
